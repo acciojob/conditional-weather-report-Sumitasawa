@@ -2,15 +2,16 @@ import React from 'react'
 
 const WeatherDisplay = ({weather}) => {
 
-    const {temperature,condition}=weather;
+    const {temperature,conditions}=weather;
 
     const tempstyle={
-        color:temperature>20?"red":"blue";
-    }
+        color:temperature>20? "red" : "blue"
+
+    };
   return (
     <div>
        <p>
-        Temperature: <span style={tempStyle}>{temperature}°C</span>
+        Temperature: <span style={tempstyle}>{temperature}°C</span>
       </p>
       <p>Conditions: {conditions}</p>
     </div>
